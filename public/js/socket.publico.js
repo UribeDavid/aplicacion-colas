@@ -26,6 +26,6 @@ socket.on('lastFour', (data) => {
 let actualizaHTML = (lastFour) => {
     for (let i = 0; i < lastFour.length; i++) {
         lblTickets[i].text(`Ticket ${lastFour[i].numero}`);
-        lblEscritorios[i].text(`Ticket ${lastFour[i].escritorio}`);
+        lblEscritorios[i].text(`Escritorio ${lastFour[i].escritorio}`);
     }
 }
